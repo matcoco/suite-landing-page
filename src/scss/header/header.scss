@@ -1,6 +1,6 @@
 .container-header {
-    margin-top: 5em;
-    $paddingBottom :2em;
+    margin-top: 6em;
+    $paddingBottom :2.5em;
     .container-header-title {
         margin-bottom:$paddingBottom ;
         h1{
@@ -26,7 +26,7 @@
     }
 
     .container-header-btn{
-        padding-bottom: $paddingBottom;
+        padding-bottom: #{$paddingBottom+2};
     }
 
     .container-header-img{
