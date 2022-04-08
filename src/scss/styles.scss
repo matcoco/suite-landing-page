@@ -1,10 +1,21 @@
-
+@import './variables';
+@import './placeholders';
+@import './mixins';
+@import './nav/nav.scss';
+@import './header/header.scss';
+@import './contents/contents.scss';
+@import './footer//footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
 
 *, html {
     padding:0;
     margin: 0;
+    font-family: 'Epilogue', sans-serif;
 }
 
 .App {
- 
+    background-color: $white;
+    .wrapper {
+        padding: 20px;
+    }
 }

@@ -1,0 +1,14 @@
+@import '../button/button.scss';
+
+.container-Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .container-logo{
+        img{
+            width: 100%;
+        }
+    }
+
+}
