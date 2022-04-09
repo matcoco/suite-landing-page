@@ -2,9 +2,15 @@ const Contents = () => {
     return (
         <div className="container-contents">
             <div className="container-contents-img1">
+                <div className="container-contents-img-blur">
+                    <img className="blurPattern" src="/assets/pattern-blur.svg" alt="blur pattern"/>
+                </div>
+            <div className="container-contents-img-jeremy">
                 <img src="/assets/image-jeremy-small.webp" alt="jeremy pics"/>
             </div>
-            <div className="test">
+   
+            </div>
+            <div className="container-part2">
                 <div className="container-contents-img2">
                     <img src="/assets/pattern-curved-line-2.svg" alt="pattern2"/>
                 </div>
