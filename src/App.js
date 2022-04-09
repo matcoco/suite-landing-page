@@ -1,11 +1,18 @@
+import Contents from './components/contents/Contents';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import Nav from './components/nav/Nav';
 import './scss/styles.scss';
 
 function App() {
   return (
     <div className="App">
-      <h1>title</h1>
-      <h2>sub title</h2>
-      <p>In sit ex exercitation eu aute duis Lorem occaecat. Labore cillum pariatur sunt proident ad adipisicing nulla. Do mollit officia ipsum ipsum consequat ex pariatur nostrud dolore deserunt. Pariatur veniam est ipsum ipsum in mollit consequat laborum dolor cupidatat excepteur.</p>
+      <div className="wrapper">
+        <Nav />
+        <Header />
+      </div>
+      <Contents />
+      <Footer /> 
     </div>
   );
 }

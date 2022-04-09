@@ -1,0 +1,47 @@
+.container-contents {
+    position: relative;
+    top: 390px;
+    z-index: 100;
+    @include flex-col-center;
+    width: 100%;
+    background-color: $dark-blue;
+    border-radius: 15px;
+    color: $white;
+    $paddingB:2em;
+    .container-contents-img1{
+        position:absolute;
+        top: -174px;
+        padding-bottom:$paddingB;
+    }
+
+    .test{
+        margin-top: 268px;
+        @include flex-col-center;
+        .container-contents-img2{
+            padding-bottom:$paddingB;
+        }
+        .title-contents{
+            font-size: 2em;
+            padding-bottom:$paddingB;
+        }
+        .text-contents-quote{
+            text-align: center;
+            line-height: 35px;
+            font-size: 1.2em;
+            padding: 0 20px $paddingB 20px;
+        }
+        .container-quote-author{
+            text-align: center;
+            padding-bottom:$paddingB;
+            .author {
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+            .job {
+                letter-spacing: 5px;
+                padding-bottom: #{$paddingB+1};
+            }
+        }
+    }
+
+}

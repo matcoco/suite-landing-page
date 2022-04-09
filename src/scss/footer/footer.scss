@@ -1,0 +1,24 @@
+footer {
+    position: absolute;
+    @include flex-col-center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 636px;
+    background-color: $grey;
+    .container-contents-footer{
+        text-align: center;
+        width: max-content;
+        .socials{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 80px;
+        }
+
+
+    }
+
+}
+
+.pad{
+    margin-bottom: 30px;
+}
