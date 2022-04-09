@@ -7,41 +7,163 @@
     background-color: $dark-blue;
     border-radius: 15px;
     color: $white;
-    $paddingB:2em;
-    .container-contents-img1{
-        position:absolute;
+    $paddingB: 2em;
+
+    .container-contents-img1 {
+        position: absolute;
         top: -174px;
-        padding-bottom:$paddingB;
+        padding-bottom: $paddingB;
     }
 
-    .test{
+    .blurPattern {
+        display: none;
+    }
+
+    .container-part2 {
         margin-top: 268px;
         @include flex-col-center;
-        .container-contents-img2{
-            padding-bottom:$paddingB;
+        .container-contents-img2 {
+            padding-bottom: $paddingB;
         }
-        .title-contents{
+        .title-contents {
             font-size: 2em;
-            padding-bottom:$paddingB;
+            padding-bottom: $paddingB;
         }
-        .text-contents-quote{
+        .text-contents-quote {
             text-align: center;
             line-height: 35px;
             font-size: 1.2em;
             padding: 0 20px $paddingB 20px;
         }
-        .container-quote-author{
+        .container-quote-author {
             text-align: center;
-            padding-bottom:$paddingB;
+            padding-bottom: $paddingB;
             .author {
                 font-weight: bold;
                 padding-bottom: 10px;
             }
             .job {
                 letter-spacing: 5px;
-                padding-bottom: #{$paddingB+1};
+                padding-bottom: #{$paddingB + 1};
             }
         }
     }
+}
 
+@media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    .container-contents {
+        position: relative;
+        top: 390px;
+        z-index: 5;
+        @include flex-col-center;
+        width: 100%;
+        background-color: $dark-blue;
+        border-radius: 15px;
+        color: $white;
+        $paddingB: 2em;
+        .container-contents-img1 {
+            position: absolute;
+            top: -174px;
+            z-index: 7;
+            padding-bottom: $paddingB;
+        }
+        .blurPattern {
+            display: block;
+            position: absolute;
+            z-index: -1;
+            height: 372px;
+            right: 50%;
+            left: 50%;
+            transform: translateY(85px) translateX(-190px);
+        }
+
+        .container-part2 {
+            margin-top: 268px;
+            @include flex-col-center;
+            .container-contents-img2 {
+                padding-bottom: $paddingB;
+            }
+            .title-contents {
+                font-size: 2em;
+                padding-bottom: $paddingB;
+            }
+            .text-contents-quote {
+                text-align: center;
+                line-height: 35px;
+                font-size: 1.2em;
+                padding: 0 10% $paddingB 10%;
+            }
+            .container-quote-author {
+                text-align: center;
+                padding-bottom: $paddingB;
+                .author {
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+                .job {
+                    letter-spacing: 5px;
+                    padding-bottom: #{$paddingB + 1};
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $max-tablet) and (max-width: $max-laptop) {
+    .container-contents {
+        position: relative;
+        top: 390px;
+        z-index: 5;
+        @include flex-col-center;
+        width: 100%;
+        background-color: $dark-blue;
+        border-radius: 15px;
+        color: $white;
+        $paddingB: 2em;
+        .container-contents-img1 {
+            position: absolute;
+            top: -174px;
+            z-index: 7;
+            padding-bottom: $paddingB;
+        }
+        .blurPattern {
+            display: block;
+            position: absolute;
+            z-index: -1;
+            height: 372px;
+            right: 50%;
+            left: 50%;
+            transform: translateY(85px) translateX(-190px);
+        }
+
+        .container-part2 {
+            margin-top: 268px;
+            @include flex-col-center;
+            .container-contents-img2 {
+                padding-bottom: $paddingB;
+            }
+            .title-contents {
+                font-size: 2em;
+                padding-bottom: $paddingB;
+            }
+            .text-contents-quote {
+                text-align: center;
+                line-height: 35px;
+                font-size: 1.2em;
+                padding: 0 10% $paddingB 10%;
+            }
+            .container-quote-author {
+                text-align: center;
+                padding-bottom: $paddingB;
+                .author {
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+                .job {
+                    letter-spacing: 5px;
+                    padding-bottom: #{$paddingB + 1};
+                }
+            }
+        }
+    }
 }

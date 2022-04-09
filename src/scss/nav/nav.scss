@@ -4,11 +4,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    margin: 0 1em;
+    margin-bottom: 100px;
+    padding-top: 1em;
     .container-logo{
         img{
             width: 100%;
         }
     }
+}
 
+@media screen and (min-width: $max-mobile) and (max-width: $max-tablet) {
+    .container-Nav{
+        margin: 0;
+        margin-bottom: 0;
+        padding-top: 1em;
+    }
 }

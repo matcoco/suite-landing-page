@@ -7,10 +7,23 @@ $violet:#A060FF;
 $pink:#CB30E3;
 $orange:#FFA84E;
 
-//typo
+// medias queries
+//mobile
+$min-mobile: 320px;
+$max-mobile: 480px;
 
-//heading XL
-$heading-xl-size: 72px;
-$heading-xl-line-space: 78px;
-$heading-xl-char-space: -1px;
+//tablets
+$min-tablet: 481px;
+$max-tablet: 768px;
+
+//laptop
+$min-laptop: 769px;
+$max-laptop: 1024px;
+
+//desktop
+$min-desktop: 1025px;
+$max-desktop: 1200px;
+
+//TV - xtra large screen
+$min-xl: 1201px;
 

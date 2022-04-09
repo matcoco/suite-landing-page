@@ -1,12 +1,13 @@
 .container-header {
     margin-top: 6em;
-    $paddingBottom :2.5em;
+    $paddingBottom: 2.5em;
+    margin: 0 1em;
     .container-header-title {
-        margin-bottom:$paddingBottom ;
-        h1{
+        margin-bottom: $paddingBottom;
+        h1 {
             font-size: 2.3em;
             font-weight: 100;
-            
+
             .solution {
                 background-image: url("../../../public/assets/pattern-curved-line-1.svg");
                 background-size: contain;
@@ -16,31 +17,40 @@
             }
         }
     }
+    .container-part1 {
+        .container-part-with-img {
+            .container-header-text {
+                margin-bottom: $paddingBottom;
+                color: $blue;
+                font-size: 1em;
+                line-height: 30px;
+                font-weight: 500;
+            }
 
-    .container-header-text{
-        margin-bottom: $paddingBottom;
-        color: $blue;
-        font-size: 1em;
-        line-height: 30px;
-        font-weight: 500;
-    }
+            .container-header-btn {
+                padding-bottom: #{$paddingBottom + 2};
+            }
+        }
 
-    .container-header-btn{
-        padding-bottom: #{$paddingBottom+2};
-    }
+        .container-header-img {
+            padding-bottom: #{$paddingBottom + 2};
+            img {
+                width: 100%;
+            }
+        }
 
-    .container-header-img{
-        padding-bottom: #{$paddingBottom + 2};
-        img{
-            width: 100%;
+        .container-header-img-2 {
+            display: none;
         }
     }
 
-    .container-header-stats{
+    .container-header-stats {
         @include flex-col-center;
         text-align: center;
         margin-bottom: -160px;
-        .stat1, .stat2, .stat3{
+        .stat1,
+        .stat2,
+        .stat3 {
             padding-bottom: $paddingBottom;
             p:first-child {
                 color: $dark-blue;
@@ -57,3 +67,57 @@
         }
     }
 }
+
+@media screen and (min-width: $max-mobile) and (max-width: $max-laptop) {
+    .container-header {
+        margin: 0;
+        margin-top: -5.5em;
+        $paddingBottom: 2.5em;
+        .container-header-title {
+            transform: translateY(227px);
+            h1 {
+                font-size: 3.3em;
+                font-weight: 100;
+                padding-right: 3.5em;
+            }
+        }
+
+        .container-part1 {
+            display: flex;
+            .container-part-with-img {
+                @include flex-col-center;
+                transform: translateY(254px);
+                .container-header-text {
+                    font-size: 1.1em;
+                    margin-right: 2em;
+                }
+
+                .container-header-btn {
+                    width: 100%;
+                    padding-bottom: #{$paddingBottom + 2};
+                }
+            }
+
+            .container-header-img {
+                display: none;
+            }
+
+            .container-header-img-2 {
+                display: block;
+                padding-bottom: #{$paddingBottom + 2};
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .container-header-stats {
+            @include flex-center;
+            flex-direction: row;
+            justify-content: space-around;
+            text-align: center;
+            margin-bottom: -160px;
+        }
+    }
+}
+
