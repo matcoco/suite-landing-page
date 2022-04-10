@@ -1,53 +1,60 @@
-.container-contents {
-    position: relative;
-    top: 390px;
-    z-index: 100;
-    @include flex-col-center;
-    width: 100%;
-    background-color: $dark-blue;
-    border-radius: 15px;
-    color: $white;
-    $paddingB: 2em;
 
-    .container-contents-img1 {
-        position: absolute;
-        top: -174px;
-        padding-bottom: $paddingB;
-    }
 
-    .blurPattern {
-        display: none;
-    }
-
-    .container-part2 {
-        margin-top: 268px;
+@media screen and (max-width: $max-mobile) {
+    .container-contents {
+        position: relative;
+        top: 390px;
+        z-index: 100;
         @include flex-col-center;
-        .container-contents-img2 {
+        width: 100%;
+        background-color: $dark-blue;
+        border-radius: 15px;
+        color: $white;
+        $paddingB: 2em;
+    
+        .container-contents-img1 {
+            position: absolute;
+            top: -174px;
             padding-bottom: $paddingB;
-        }
-        .title-contents {
-            font-size: 2em;
-            padding-bottom: $paddingB;
-        }
-        .text-contents-quote {
-            text-align: center;
-            line-height: 35px;
-            font-size: 1.2em;
-            padding: 0 20px $paddingB 20px;
-        }
-        .container-quote-author {
-            text-align: center;
-            padding-bottom: $paddingB;
-            .author {
-                font-weight: bold;
-                padding-bottom: 10px;
+            .container-contents-img2 {
+                text-align: center;
+                margin-top: 2em;
             }
-            .job {
-                letter-spacing: 5px;
-                padding-bottom: #{$paddingB + 1};
+        }
+    
+        .blurPattern {
+            display: none;
+        }
+    
+        .container-part2 {
+            margin-top: 348px;
+            @include flex-col-center;
+    
+            .title-contents {
+                font-size: 2em;
+                padding-bottom: 1.5em;
+            }
+            .text-contents-quote {
+                text-align: center;
+                line-height: 35px;
+                font-size: 1.2em;
+                padding: 0 20px $paddingB 20px;
+            }
+            .container-quote-author {
+                text-align: center;
+                padding-bottom: $paddingB;
+                .author {
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+                .job {
+                    letter-spacing: 5px;
+                    padding-bottom: #{$paddingB + 1};
+                }
             }
         }
     }
+
 }
 
 @media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -66,6 +73,10 @@
             top: -174px;
             z-index: 7;
             padding-bottom: $paddingB;
+            .container-contents-img2 {
+                text-align: center;
+                margin-top: 2em;
+            }
         }
         .blurPattern {
             display: block;
@@ -78,7 +89,67 @@
         }
 
         .container-part2 {
-            margin-top: 268px;
+            margin-top: 359px;
+            @include flex-col-center;
+            .title-contents {
+                font-size: 2em;
+                padding-bottom: $paddingB;
+            }
+            .text-contents-quote {
+                text-align: center;
+                line-height: 35px;
+                font-size: 1.2em;
+                padding: 0 10% $paddingB 10%;
+            }
+            .container-quote-author {
+                text-align: center;
+                padding-bottom: $paddingB;
+                .author {
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+                .job {
+                    letter-spacing: 5px;
+                    padding-bottom: #{$paddingB + 1};
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $min-laptop) and (max-width: $max-laptop) {
+    .container-contents {
+        position: relative;
+        top: 390px;
+        z-index: 5;
+        @include flex-col-center;
+        width: 100%;
+        background-color: $dark-blue;
+        border-radius: 15px;
+        color: $white;
+        $paddingB: 2em;
+        .container-contents-img1 {
+            position: absolute;
+            top: -174px;
+            z-index: 7;
+            padding-bottom: $paddingB;
+            .container-contents-img2 {
+                text-align: center;
+                margin-top: 2em;
+            }
+        }
+        .blurPattern {
+            display: block;
+            position: absolute;
+            z-index: -1;
+            height: 372px;
+            right: 50%;
+            left: 50%;
+            transform: translateY(85px) translateX(-190px);
+        }
+
+        .container-part2 {
+            margin-top: 359px;
             @include flex-col-center;
             .container-contents-img2 {
                 padding-bottom: $paddingB;
@@ -109,61 +180,133 @@
     }
 }
 
-@media screen and (min-width: $max-tablet) and (max-width: $max-laptop) {
+@media screen and (min-width: $min-desktop) and (max-width: $max-desktop) {
     .container-contents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: relative;
-        top: 390px;
-        z-index: 5;
-        @include flex-col-center;
+        top: 180px;
+        z-index: 100;
         width: 100%;
         background-color: $dark-blue;
         border-radius: 15px;
         color: $white;
         $paddingB: 2em;
+    
         .container-contents-img1 {
-            position: absolute;
-            top: -174px;
-            z-index: 7;
-            padding-bottom: $paddingB;
-        }
-        .blurPattern {
-            display: block;
-            position: absolute;
-            z-index: -1;
-            height: 372px;
-            right: 50%;
-            left: 50%;
-            transform: translateY(85px) translateX(-190px);
-        }
-
-        .container-part2 {
-            margin-top: 268px;
-            @include flex-col-center;
-            .container-contents-img2 {
-                padding-bottom: $paddingB;
+            display: flex;
+            .container-contents-img-jeremy{
+                transform: scale(1.1) translateY(-14px);
             }
+            .container-contents-img2 {
+                transform: scale(0.8) translateY(95px);
+                margin-left: 2.5em;
+                margin-right: 2.5em;
+            }
+            
+            .blurPattern {
+                display: block;
+                position: absolute;
+                z-index: -1;
+                height: 448px;
+                right: 50%;
+                left: 50%;
+                transform: translateY(52px) translateX(-478px);
+            }
+        }
+    
+        .blurPattern {
+            display: none;
+        }
+    
+        .container-part2 {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            font-size: 1em;
             .title-contents {
-                font-size: 2em;
-                padding-bottom: $paddingB;
+                font-size: 3em;
+                margin-bottom: 0.5em;
             }
             .text-contents-quote {
-                text-align: center;
                 line-height: 35px;
                 font-size: 1.2em;
-                padding: 0 10% $paddingB 10%;
+                margin-bottom: 1em;
             }
             .container-quote-author {
-                text-align: center;
-                padding-bottom: $paddingB;
                 .author {
                     font-weight: bold;
-                    padding-bottom: 10px;
                 }
                 .job {
                     letter-spacing: 5px;
-                    padding-bottom: #{$paddingB + 1};
                 }
             }
         }
     }
+  
+}
+
+
+@media screen and (min-width: $min-xl) {
+    .container-contents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 180px;
+        z-index: 100;
+        width: 100%;
+        background-color: $dark-blue;
+        border-radius: 15px;
+        color: $white;
+        $paddingB: 2em;
+    
+        .container-contents-img1 {
+            display: flex;
+            .container-contents-img-jeremy{
+                transform: scale(1.1) translateY(-14px);
+            }
+            .container-contents-img2 {
+                transform: scale(0.8) translateY(95px);
+                margin-left: 2.5em;
+                margin-right: 2.5em;
+            }
+            
+            .blurPattern {
+                display: block;
+                position: absolute;
+                z-index: -1;
+                height: 448px;
+                right: 50%;
+                left: 50%;
+                transform: translateY(52px) translateX(-544px);
+            }
+        }
+    
+        .container-part2 {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            font-size: 1em;
+            .title-contents {
+                font-size: 3em;
+                margin-bottom: 0.5em;
+            }
+            .text-contents-quote {
+                line-height: 35px;
+                font-size: 1.2em;
+                margin-bottom: 1em;
+            }
+            .container-quote-author {
+                .author {
+                    font-weight: bold;
+                }
+                .job {
+                    letter-spacing: 5px;
+                }
+            }
+        }
+    }
+  
 }
