@@ -3,13 +3,13 @@ const Contents = () => {
         <div className="container-contents">
             <div className="container-contents-img1">
                 <div className="container-contents-img-blur">
-                    <img className="blurPattern" src="/assets/pattern-blur.svg" alt="blur pattern"/>
+                    <img className="blurPattern" src="assets/pattern-blur.svg" alt="blur pattern"/>
                 </div>
                 <div className="container-contents-img-jeremy">
-                    <img src="/assets/image-jeremy-small.webp" alt="jeremy pics"/>
+                    <img src="assets/image-jeremy-small.webp" alt="jeremy pics"/>
                 </div>
                 <div className="container-contents-img2">
-                    <img src="/assets/pattern-curved-line-2.svg" alt="pattern2"/>
+                    <img src="assets/pattern-curved-line-2.svg" alt="pattern2"/>
                 </div>
             </div>
          

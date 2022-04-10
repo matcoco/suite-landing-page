@@ -21,10 +21,10 @@ const Header = () => {
 
 
                 <div className="container-header-img">
-                    <img src="/assets/image-hero-landscape@2x.webp" alt="phone assets" />
+                    <img src="assets/image-hero-landscape@2x.webp" alt="phone assets" />
                 </div>
                 <div className="container-header-img-2">
-                    <img src="/assets/image-hero-portrait@2x.webp" alt="phone assets" />
+                    <img src="assets/image-hero-portrait@2x.webp" alt="phone assets" />
                 </div>
             </div>
 
