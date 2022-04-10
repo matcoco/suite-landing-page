@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/meet-landing-page/static/css/main.dd650d5d.css",
-    "main.js": "/meet-landing-page/static/js/main.9831a22f.js",
-    "static/js/787.f27f515e.chunk.js": "/meet-landing-page/static/js/787.f27f515e.chunk.js",
-    "index.html": "/meet-landing-page/index.html",
-    "static/media/pattern-curved-line-1.svg": "/meet-landing-page/static/media/pattern-curved-line-1.737baf08aa1b342f22c3.svg",
-    "main.dd650d5d.css.map": "/meet-landing-page/static/css/main.dd650d5d.css.map",
-    "main.9831a22f.js.map": "/meet-landing-page/static/js/main.9831a22f.js.map",
-    "787.f27f515e.chunk.js.map": "/meet-landing-page/static/js/787.f27f515e.chunk.js.map"
+    "main.css": "/suite-landing-page/static/css/main.7aeadcb9.css",
+    "main.js": "/suite-landing-page/static/js/main.3dda2f59.js",
+    "static/js/787.f27f515e.chunk.js": "/suite-landing-page/static/js/787.f27f515e.chunk.js",
+    "index.html": "/suite-landing-page/index.html",
+    "static/media/pattern-curved-line-1.svg": "/suite-landing-page/static/media/pattern-curved-line-1.737baf08aa1b342f22c3.svg",
+    "main.7aeadcb9.css.map": "/suite-landing-page/static/css/main.7aeadcb9.css.map",
+    "main.3dda2f59.js.map": "/suite-landing-page/static/js/main.3dda2f59.js.map",
+    "787.f27f515e.chunk.js.map": "/suite-landing-page/static/js/787.f27f515e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd650d5d.css",
-    "static/js/main.9831a22f.js"
+    "static/css/main.7aeadcb9.css",
+    "static/js/main.3dda2f59.js"
   ]
 }
